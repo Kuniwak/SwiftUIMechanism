@@ -1,8 +1,8 @@
 version: 2
 jobs:
-  test-swift-5.0.1:
+  test-swift-5.0:
     docker:
-      - image: library/swift:5.0.1
+      - image: library/swift:5.0
     steps:
       - checkout
       - run:
@@ -16,4 +16,4 @@ workflows:
   version: 2
   build:
     jobs:
-      - test-swift-5.0.1
+      - test-swift-5.0
